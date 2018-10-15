@@ -85,18 +85,22 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>hexo d部署的时候报如下错误<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: EACCES: permission denied, unlink &apos;/Users/songlihong/Documents/github/hexo/.deploy_git/archives/index.html&apos;</span><br></pre></td></tr></table></figure></p>
-<p>尝试了重新生成ssh<br><figure class="highlight plain"><figcaption><span>-t rsa -C "你的邮箱地址"</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">###加入Agent</span><br><span class="line">* 输入：</span><br><span class="line">``` ssh-agent -s</span><br></pre></td></tr></table></figure></p>
+<p>尝试了重新生成ssh<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;</span><br></pre></td></tr></table></figure></p>
+<p>###加入Agent</p>
 <ul>
-<li>当出现：<figure class="highlight plain"><figcaption><span>pid </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">* 之后再输入：</span><br><span class="line">``` ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+<li><p>输入：</p>
+<figure class="highlight plain"><figcaption><span>-s</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">* 当出现：</span><br><span class="line">``` Agent pid =XXX</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>之后再输入：</p>
+<figure class="highlight plain"><figcaption><span>~/.ssh/id_rsa</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">各种操作之后，还是不行</span><br><span class="line">最后</span><br><span class="line">``` sudo hexo d</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>各种操作之后，还是不行<br>最后<br><figure class="highlight plain"><figcaption><span>hexo d</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">终于看到</span><br></pre></td></tr></table></figure></p>
-<p>INFO  Deploy done: git<br><code>`</code></p>
+<p>终于看到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/15/hexo-d-报错/" data-id="cjna1fdmo00012vmat56fwo14" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/hexo-d-报错/" data-id="cjna1ivbo00013wmay48c9zsw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -123,7 +127,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/15/my-first-post/" data-id="cjna1fdms00022vmaqth408b6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/my-first-post/" data-id="cjna1ivbs00023wma01vwrorz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -168,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/15/hello-world/" data-id="cjna1fdmi00002vma9st9thkm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/hello-world/" data-id="cjna1ivbh00003wmal1gk6r6j" class="article-share-link">Share</a>
       
       
     </footer>
